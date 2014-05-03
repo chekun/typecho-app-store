@@ -1,6 +1,7 @@
 package models
 
 import (
+	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
 	_ "github.com/go-sql-driver/mysql"
 	"time"
@@ -48,7 +49,11 @@ func (v *Version) TableName() string {
 
 func init() {
 	orm.RegisterDriver("mysql", orm.DR_MySQL)
-	orm.RegisterDataBase("default", "mysql", "root:root@/typecho-app-store?charset=utf8")
+	dbUser := beego.AppConfig.String("mysqluser")
+	dbPassword := beego.AppConfig.String("mysqlpass")
+	dbHost := beego.AppConfig.String("mysqlhost")
+	dbName := beego.AppConfig.String("mysqldb")
+	orm.RegisterDataBase("default", "mysql", dbUser + ":" + dbPassword + "@" + dbHost + "/" + dbName+"?charset=utf8")
 	orm.RegisterModel(new(Plugin), new(Version))
 	Db = orm.NewOrm()
 }
