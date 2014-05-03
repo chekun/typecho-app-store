@@ -4,6 +4,7 @@ import (
 	"regexp"
 	"io/ioutil"
 	"strings"
+	"os"
 )
 
 type Plugin struct {
@@ -17,10 +18,14 @@ type Plugin struct {
 	Source	string
 }
 
-func Parse(path, packageName, repo string) Plugin{
+func Parse(path, packageName, repo string, retry bool) Plugin{
 	plugin := Plugin{"", "", "", "", "", "", "*", ""}
 	pluginContent, err := ioutil.ReadFile(path)
 	if err != nil {
+		if retry {
+			os.Rename(strings.Replace(path, "Plugin.php", "plugin.php", 1), path)
+			plugin = Parse(path, packageName, repo, false)
+		}
 		return plugin
 	}
 	reString := `/\*\*([\s\S]*?)\*/`

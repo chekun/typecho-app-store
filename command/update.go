@@ -76,11 +76,11 @@ func main() {
 				fmt.Printf("standard plugin %s \n", fileName)
 				plugin := typecho.Plugin{}
 				if fileName == "CommenToMail4BAE" {
-					plugin = typecho.Parse(repoFolder+"/"+fileName+"/CommentToMail/Plugin.php", fileName, repoFolder)
+					plugin = typecho.Parse(repoFolder+"/"+fileName+"/CommentToMail/Plugin.php", fileName, repoFolder, true)
 				} else if fileName == "Contribute" {
-					plugin = typecho.Parse(repoFolder+"/"+fileName+"/plugins/Contribute/Plugin.php", fileName, repoFolder)
+					plugin = typecho.Parse(repoFolder+"/"+fileName+"/plugins/Contribute/Plugin.php", fileName, repoFolder, true)
 				} else {
-					plugin = typecho.Parse(repoFolder+"/"+fileName+"/Plugin.php", fileName, repoFolder)
+					plugin = typecho.Parse(repoFolder+"/"+fileName+"/Plugin.php", fileName, repoFolder, true)
 				}
 				fmt.Printf("Detail Info: %s \n", plugin)
 				models.UpdatePlugin(&plugin)
@@ -92,7 +92,7 @@ func main() {
 				pluginName := strings.Replace(fileName, ".php", "", 1)
 				os.Mkdir(repoFolder+"/"+pluginName, 0755)
 				os.Rename(repoFolder+"/"+fileName, repoFolder+"/"+pluginName+"/Plugin.php")
-				plugin := typecho.Parse(repoFolder + "/" + pluginName + "/Plugin.php", pluginName, repoFolder)
+				plugin := typecho.Parse(repoFolder + "/" + pluginName + "/Plugin.php", pluginName, repoFolder, true)
 				models.UpdatePlugin(&plugin)
 			}
 		}
