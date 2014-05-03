@@ -74,5 +74,8 @@ func Parse(path, packageName, repo string, retry bool) Plugin{
 	}
 	plugin.Source = repo
 	plugin.Package = packageName
+	if ! retry {
+		os.Remove(path)
+	}
 	return plugin
 }
