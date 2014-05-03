@@ -1,0 +1,11 @@
+bin/*
+!bin/.gitkeep
+conf/app.conf
+storage/archive/*
+!storage/archive/.gitkeep
+storage/logs/*
+!storage/logs/.gitkeep
+storage/packages/*
+!storage/packages/.gitkeep
+storage/repo/*
+!storage/repo/.gitkeep
