@@ -83,10 +83,13 @@ func GetAllPlugins() []*Plugin {
 func AddNewPlugin(p *typecho.Plugin) {
 	plugin := new(Plugin)
 	plugin.Package = p.Package
-	Db.Insert(plugin)
-
-	AppendVersion(p)
-
+	id, err := Db.Insert(plugin)
+	if err != nil {
+		fmt.Printf("Insert Fail %s \n", p)
+	} else {
+		fmt.Printf("Insert OK %s - %s\n", p, id)
+		AppendVersion(p)
+	}
 }
 
 func AppendVersion(p *typecho.Plugin) {

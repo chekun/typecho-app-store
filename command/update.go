@@ -82,6 +82,7 @@ func main() {
 				} else {
 					plugin = typecho.Parse(repoFolder+"/"+fileName+"/Plugin.php", fileName, repoFolder)
 				}
+				fmt.Printf("Detail Info: %s \n", plugin)
 				models.UpdatePlugin(&plugin)
 				continue
 			}
