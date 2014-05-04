@@ -16,7 +16,6 @@ Typecho 应用商店 Server
 
 很简单，下载配套的的[AppStore插件][2]即可使用：
 
-[card]typecho-app-store/AppStore[/card]
 
 ## 如何开发插件
 
