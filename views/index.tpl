@@ -6,7 +6,7 @@
     <meta name="description" content="Typecho App Store - The missing plugins store for Typecho!">
     <meta name="keywords" content="Typecho, Typecho插件, Typecho应用商店">
     <title>Typecho应用商店 - The missing plugins store for Typecho!</title>
-    <link rel="stylesheet" href="/static/css/pure-min.css">
+    <link rel="stylesheet" href="//cdn.staticfile.org/pure/0.4.2/pure-min.css">
     <!--[if gt IE 8]><!-->
     <link rel="stylesheet" href="/static/css/marketing.css">
     <!--<![endif]-->
