@@ -7,9 +7,6 @@
     <meta name="keywords" content="Typecho, Typecho插件, Typecho应用商店">
     <title>Typecho应用商店 - The missing plugins store for Typecho!</title>
     <link rel="stylesheet" href="/static/css/pure-min.css">
-    <!--[if lte IE 8]>
-    <link rel="stylesheet" href="/static/css/marketing-old-ie.css">
-    <![endif]-->
     <!--[if gt IE 8]><!-->
     <link rel="stylesheet" href="/static/css/marketing.css">
     <!--<![endif]-->
