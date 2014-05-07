@@ -12,7 +12,7 @@
     <!--<![endif]-->
     <link rel="stylesheet" href="/static/css/font-awesome.min.css">
     <!--[if lt IE 9]>
-    <script src="/static/js/html5shiv.js"></script>
+    <script src="//cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
     <![endif]-->
     <style>
         html {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
