@@ -51,14 +51,14 @@ func main() {
 		}
 		os.Chdir(repoFolder)
 		//到这里就已经有了仓库目录了，那么那么进行一次pull操作
-		cmd := exec.Command("git", "fetch", "origin", "master")
+		cmd := exec.Command("git", "stash")
 		runCommand(cmd)
-		cmd = exec.Command("git", "stash")
-		runCommand(cmd)
-		cmd = exec.Command("git", "merge", "origin", "master")
+		cmd = exec.Command("git", "pull", "origin", "master")
 		runCommand(cmd)
 		fmt.Println("git pull " + repoFolder)
 		//更新万恶的gitsubmodule
+		cmd = exec.Command("git", "submodule", "update", "--init")
+		runCommand(cmd)
 		cmd = exec.Command("git", "submodule", "foreach", "git", "pull", "origin", "master")
 		runCommand(cmd)
 		fmt.Println("git submodule foreach git pull origin master")
