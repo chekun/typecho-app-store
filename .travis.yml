@@ -9,5 +9,6 @@ go:
 install: make get-deps
 
 before_install:
-  - mv $HOME/gopath/src/github.com/typecho-app-store/typecho-app-store $HOME/src/
-  - cd $HOME/src/typecho-app-store
+  -
+  - mv $HOME/gopath/src/github.com/typecho-app-store/typecho-app-store $HOME/gopath/src/
+  - cd $HOME/gopath/src/typecho-app-store
