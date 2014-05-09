@@ -11,3 +11,7 @@ update:
 
 clean:
 	rm -f bin/*
+
+get-deps:
+	go get github.com/astaxie/beego
+	go get github.com/go-sql-driver/mysql
