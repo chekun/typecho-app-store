@@ -1,6 +1,8 @@
 Typecho 应用商店 Server
 ================
 
+[![Build Status](https://travis-ci.org/typecho-app-store/typecho-app-store.svg?branch=master)](https://travis-ci.org/typecho-app-store/typecho-app-store)
+
 ![Typecho应用商店][1]
 
 ## 实现原理
