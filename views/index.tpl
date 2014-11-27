@@ -30,7 +30,7 @@
                 The missing plugins store for Typecho!
             </p>
             <p>
-                <a href="http://me.dilicms.com/typecho-app-store.html" class="pure-button pure-button-primary">开始使用</a>
+                <a href="http://typecho.chekun.me/typecho-app-store.html" class="pure-button pure-button-primary">开始使用</a>
                 <a href="https://github.com/typecho-app-store" class="pure-button pure-button-secondary">Github源代码</a>
             </p>
             
