@@ -37,7 +37,7 @@
                 The missing plugins store for Typecho!
             </p>
             <p>
-                <a href="https://github.com/chekun/AppStore/archive/1.1.0.zip" class="pure-button pure-button-primary">下载使用(1.1.0)</a>
+                <a href="https://github.com/chekun/AppStore/archive/1.1.1.zip" class="pure-button pure-button-primary">下载使用(v1.1.1)</a>
                 <a href="https://github.com/chekun/AppStore" class="pure-button pure-button-secondary">Fork me on Github</a>
             </p>
 
@@ -49,7 +49,7 @@
                 <div class="pure-u-1-3">
                     <div class="step-box">
                         <h3>第一步</h3>
-                        <p>下载<a href="https://github.com/chekun/AppStore/archive/1.1.0.zip">AppStore插件</a>到usr/plugins/AppStore</p>
+                        <p>下载<a href="https://github.com/chekun/AppStore/archive/1.1.1.zip">AppStore插件</a>到usr/plugins/AppStore</p>
                     </div>
                 </div>
                 <div class="pure-u-1-3">
