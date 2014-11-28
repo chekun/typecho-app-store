@@ -20,6 +20,13 @@
         .splash-head, .splash-subhead {text-transform: none;padding: 0em 1.6em; border:none}
         .splash p {margin: 2em 0}
         .content-wrapper {top: 50%;display: none}
+        .step-box {padding: 1em;}
+        .step-box h3 {color: white;}
+        .step-box p {text-transform: none; color: white;}
+        .step-box p a {color: white;}
+        p {color: white;}
+        p a {text-transform: none;}
+        .supported {color: green;font-size: 1.6em;}
     </style>
 </head>
 <body>
@@ -30,16 +37,42 @@
                 The missing plugins store for Typecho!
             </p>
             <p>
-                <a href="http://typecho.chekun.me/typecho-app-store.html" class="pure-button pure-button-primary">开始使用</a>
-                <a href="https://github.com/typecho-app-store" class="pure-button pure-button-secondary">Github源代码</a>
+                <a href="https://github.com/chekun/AppStore/archive/1.1.0.zip" class="pure-button pure-button-primary">下载使用(1.1.0)</a>
+                <a href="https://github.com/chekun/AppStore" class="pure-button pure-button-secondary">Fork me on Github</a>
+            </p>
+
+            <p>
+                支持: Typecho v1.0, v0.9, v0.8
             </p>
             
+            <div class="pure-g">
+                <div class="pure-u-1-3">
+                    <div class="step-box">
+                        <h3>第一步</h3>
+                        <p>下载<a href="https://github.com/chekun/AppStore/archive/1.1.0.zip">AppStore插件</a>到usr/plugins/AppStore</p>
+                    </div>
+                </div>
+                <div class="pure-u-1-3">
+                    <div class="step-box">
+                        <h3>第二步</h3>
+                        <p>激活AppStore插件</p>
+                    </div>
+                </div>
+                <div class="pure-u-1-3">
+                    <div class="step-box">
+                        <h3>第三步</h3>
+                        <p>选择需要的插件，进行安装吧^_^</p>
+                    </div>
+                </div>
+            </div>
+
             <p>
-                <img src="/static/img/splash.jpg" width="635">
+                <iframe src="http://ghbtns.com/github-btn.html?user=chekun&type=follow"
+  allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe>
             </p>
 
             <p style="text-transform: none;color: white">
-                Made with <i class="fa fa-heart"></i> by <a href="https://github.com/chekun" style="color:white">chekun</a>.
+                Made with <i class="fa fa-heart"></i> by <a href="http://chekun.me" style="color:white">chekun</a>
             </p>
         </div>
 
@@ -57,5 +90,10 @@
             document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Ff6238005d39518d57a5b12cd53f92586' type='text/javascript'%3E%3C/script%3E"));
         </script>
     </div>
+
+    <a href="https://github.com/chekun/AppStore">
+        <img style="position:absolute;top:0;right:0;border:0;z-index:100" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png">
+    </a>
+
 </body>
 </html>
