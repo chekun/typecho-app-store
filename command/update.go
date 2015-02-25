@@ -83,7 +83,9 @@ func main() {
 					plugin = typecho.Parse(repoFolder+"/"+fileName+"/Plugin.php", fileName, repoFolder, true)
 				}
 				fmt.Printf("Detail Info: %s \n", plugin)
-				models.UpdatePlugin(&plugin)
+				if plugin.Package != "" {
+                    models.UpdatePlugin(&plugin)
+                }
 				continue
 			}
 			if strings.Contains(fileName, ".php") {
@@ -93,7 +95,9 @@ func main() {
 				os.Mkdir(repoFolder+"/"+pluginName, 0755)
 				os.Rename(repoFolder+"/"+fileName, repoFolder+"/"+pluginName+"/Plugin.php")
 				plugin := typecho.Parse(repoFolder + "/" + pluginName + "/Plugin.php", pluginName, repoFolder, true)
-				models.UpdatePlugin(&plugin)
+				if plugin.Package != "" {
+                    models.UpdatePlugin(&plugin)
+                }
 			}
 		}
 	}
