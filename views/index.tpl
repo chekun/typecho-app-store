@@ -37,7 +37,7 @@
                 The missing plugins store for Typecho!
             </p>
             <p>
-                <a href="https://github.com/chekun/AppStore/archive/1.2.0.zip" class="pure-button pure-button-primary">下载使用(v1.1.1)</a>
+                <a href="https://github.com/chekun/AppStore/archive/1.2.0.zip" class="pure-button pure-button-primary">下载使用(v1.2.0)</a>
                 <a href="https://github.com/chekun/AppStore" class="pure-button pure-button-secondary">Fork me on Github</a>
             </p>
 
