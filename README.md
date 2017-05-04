@@ -1,7 +1,7 @@
 Typecho 应用商店 Server
 ================
 
-该项目已废弃，请使用[chekun/typecho-app-store](https://github.com/chekun/typecho-app-store)
+该项目已废弃，请使用 [chekun/echoed](https://github.com/chekun/echoed)
 
 [![Build Status](https://travis-ci.org/typecho-app-store/typecho-app-store.svg?branch=master)](https://travis-ci.org/typecho-app-store/typecho-app-store)
 
